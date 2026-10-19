@@ -1,0 +1,14 @@
+# Normalise line endings so the repository is identical on Windows, macOS and Linux.
+# Files are stored with LF in git and checked out natively.
+* text=auto
+
+# Windows entry point: keep CRLF so it runs comfortably in PowerShell.
+*.ps1 text eol=crlf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.gz binary
+*.zip binary
